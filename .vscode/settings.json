@@ -1,6 +1,5 @@
 {
-    "editor.wordWrap": "on",
-    "diffEditor.wordWrap": "on",
     "editor.mouseWheelZoom": true,
-    "liveServer.settings.port": 5501
+    "workbench.editor.mouseBackForwardToNavigate": true,
+    "editor.wordWrap": "on"
 }
