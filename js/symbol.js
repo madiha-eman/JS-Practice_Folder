@@ -21,13 +21,13 @@ myObj = {};
 myObj[k1] = "Harry";
 myObj[k2] = "Rohan";
 myObj["name"] = "Good boy"
-myObj[4] = "Good int"
+// myObj[4] = "Good int"
 
 
 console.log(myObj);
-console.log(myObj[k1]);
-console.log(myObj[k2]);
-console.log(myObj.k2); // !! ALERT !!: cannot do this to get Rohan because it is same as myObj["k2"]
+// console.log(myObj[k1]);
+// console.log(myObj[k2]);
+// console.log(myObj.k2); // !! ALERT !!: cannot do this to get Rohan because it is same as myObj["k2"]
 
 
 // Symbols are ignored in for in loop

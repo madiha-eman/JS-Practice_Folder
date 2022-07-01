@@ -34,27 +34,25 @@ let selective = document.getElementById('selective');
 let setAlaramBtn = document.getElementById('setAlaramBtn');
 setAlaramBtn.addEventListener('click', setAlaram);
 
-function ringbell(){
-
+function ringbell() {
     audio.play();
-     
 }
 let timeToAlarm = null;
-function setAlaram(e){
+function setAlaram(e) {
     e.preventDefault();
     let hour = document.getElementById('alarm');
-     let alarmDate = new Date(hour.value,)
+    let alarmDate = new Date(hour.value)
     console.log(alarmDate);
     currentDate = new Date();
- 
+
     let timeToAlarm = alarmDate - currentDate;
     console.log(timeToAlarm);
 
-    if(timeToAlarm >= 0 ){
-       setTimeout(()=>{
-         ringbell();
-         console.log('ringing now')
-       }, timeToAlarm)
+    if (timeToAlarm >= 0) {
+        setTimeout(() => {
+            ringbell();
+            console.log('ringing now')
+        }, timeToAlarm)
     }
 }
 let stopAlaram = document.getElementById('stopBtn');
@@ -63,10 +61,16 @@ stopAlaram.addEventListener('click', clearAlarm)
 function clearAlarm() {
     timeToAlarm = alarmDate - currentDate;
     audio.pause();
-    if(timeToAlarm){
+    if (timeToAlarm) {
         clear(timeToAlarm);
-        
+
         console.log('Alarm cleared');
     }
 }
-
+function showAlaram(){
+    let alaramfix = document.getElementById('alaramfix');
+    let html = '';
+   alarmDate.forEach(element => {
+     console.log(element)
+   });
+}
