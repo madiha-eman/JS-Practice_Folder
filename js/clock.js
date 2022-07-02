@@ -31,3 +31,29 @@ function setClock(){
    zero = (zero < 10) ? '0' + zero  : '' + zero;
    return zero
 }
+
+
+function selectedHours(){
+   let select = document.getElementById('selecthrs');
+   let hrs = 12;
+   for(let i=1; i<=hrs; i++){
+      let option = new Option(i< 10 ? '0' + i : i,i)
+      select.options[select.options.length] = option;
+   // console.log(select.options[select.options.length] = option)
+   }
+
+}
+
+selectedHours()
+
+function selectedMinutes(){
+   let selectmin = document.getElementById('selectmin');
+   let mins = 59;
+   for(let i=1; i<=mins; i++){
+      let option = new Option(i< 10 ? '0' + i : i,i)
+      selectmin.options[selectmin.options.length] = option;
+   // console.log(select.options[select.options.length] = option)
+   }
+
+}
+selectedMinutes()
